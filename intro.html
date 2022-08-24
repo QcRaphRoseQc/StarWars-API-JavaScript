@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TP2 StarWars</title>
+        <script defer src="js/StarWars.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Creer une div container -->
+        <div id="container">
+            <source id="mp3" src="audio/audio.mp3" type="mp3">
+            <!-- Creer une div header -->
+            <div id="header">
+                <h1>STARWARS TP2</h1>
+            </div>
+            <div id="content">
+                <div id="dropdown">
+                    <select id="filmsList" class="list">
+                    </select>
+                    <select id="planetsList" class="list">
+                    </select>
+                </div>
+                <div id="boutonContainer">
+                </div>
+                <div class="img-wrapper">
+                    <img id="image" class="img-responsive" src="images/Alderaan/1.jpeg" alt="planete">
+                    <div class="img-overlay">
+                        <button class="btn" id="sound"></button>
+                        <button class="btn" id="precedent">Précédent</button>
+                        <button class="btn" id="suivant">Suivant</button>
+                        <button class="btn" id="stop">ARRETER</button>                      
+
+                        <input type="range" min="1600" max="5000" value="3000" id="scroller">
+                    </div>
+                </div>
+                <div id="footer">
+                    <p>TP2 Raphael Bergeron-Larose</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

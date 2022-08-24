@@ -1,0 +1,142 @@
+
+
+@font-face {
+  font-family: "starwarsFont";
+  src: url("./font/STJEDISE.TTF");
+}
+
+/* body */
+body {
+  background-color: #000000;
+  font-family: "starwarsFont";
+  font-size: 35px;
+  line-height: 20px;
+  color: #FFE81F;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border-color: #FFE81F;
+}
+
+
+#footer{
+  padding-top:25px;
+  font-size: 15px;
+}
+
+select {
+  font-size: 18px;
+  line-height: 20px;
+  color: #FFE81F;
+  background-color: #1d1c1c;
+  border-color: #FFE81F;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "starwarsFont";
+}
+
+select:focus {
+  outline: none;
+}
+
+button{
+  background-color: transparent;
+  color: #FFE81F;
+  font-family: "starwarsFont";
+  border: none;
+  font-size: 25px;
+}
+
+#scroller {
+  background: #FFE81F;
+  border: solid 1px #FFE81F;
+  border-radius: 8px;
+  height: 7px;
+  width: 250px;
+  outline: none;
+  transition: background 450ms ease-in;
+  -webkit-appearance: none;  
+}
+
+#scroller::-webkit-slider-thumb {
+  background: #000000;
+  border: solid 1px #000000;
+  border-radius: 8px;
+  height: 20px;
+  width: 20px;
+  outline: none;
+  transition: background 450ms ease-in;
+  -webkit-appearance: none;
+}
+
+#dropdown {
+  margin-bottom: 25px;
+}
+
+/* exclude button id sound from button:hover */
+button:hover:not(#sound) {
+  background-color: #FFE81F;
+  color: #000000;
+}
+
+
+
+.containerImage .btn:hover {
+  background-color: black;
+  border: 3px solid rgb(203, 14, 14);
+}
+.img-wrapper {
+  position: relative;
+}
+
+.img-responsive {
+  
+  display: block;
+  margin : auto;
+  width: 100%;
+  height: 620px;
+  box-shadow: 1px 15px 71px -2px rgba(0,0,0,0.65);
+-webkit-box-shadow: 1px 15px 71px -2px rgba(0,0,0,0.65);
+-moz-box-shadow: 1px 15px 71px -2px rgba(0,0,0,0.65);
+  
+}
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+
+}
+
+.img-overlay:before {
+  
+  content: ' ';
+  display: block;
+  height: 90%;
+}
+
+
+
+/* create a sound icon for button id sound */
+#sound {
+  position: relative;
+  top:10px;
+  
+  width: 40px;
+  height: 40px;
+
+  background-image: url("./images/mutedIcon.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#sound:hover {
+
+}
