@@ -1,2 +1,4 @@
-<video src="demo.mp4" controls="controls" style="max-width: 730px;">
-</video>
+<p align="center">
+<img src="demo.png"
+     alt="demo"/>
+</p>
